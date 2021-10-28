@@ -13,7 +13,7 @@ import PIL.Image as Image
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-base_path = '/home/prudhvik/btp-env/BTP/data/images/'
+base_path = '/content/drive/My Drive/coco/'
 type_map = {
     "train": base_path + "train2014/COCO_train2014",
     "val": base_path + "val2014/COCO_val2014",

@@ -10,7 +10,7 @@ from __future__ import division
 # In[1]:
 
 
-base_path = '/home/prudhvik/btp-env/BTP/'
+base_path = '/content/drive/My Drive/coco/'
 opt = {
     'num_layers' : 2,
     'droprnn' : 0.1,
@@ -32,21 +32,21 @@ opt = {
     'record_step' : 1,
     'num_epoch' : 16,
     'patience' : 3,
-    'save_freq' : 8,
+    'save_freq' : 1,
     'trainval' : 1,
     'seed' : 12345,
-    'data_path' : base_path + 'data/',
+    'data_path' : base_path,
     'data_name' : 'cocotrainval',
     'img_name' : 'cocoimages',
     'num_workers' : 8,
-    'batch_size' : 48,
-    'word_vectors' : base_path + 'data/glove_840B.pt',
+    'batch_size' : 32,
+    'word_vectors' : base_path + 'glove_840B.pt',
     'lr' : 0.001,
     'gamma' : 0.5,
     'step_size' : 7,
     'weight_decay' : 0.0001,
     'size_scale' : (448, 448),
-    'train_from' : base_path + '/models/trained.pt',
+    'train_from' : base_path + 'models/trained.pt',
     'max_grad_norm' : None,
     'use_h5py' : False,
     'shuffle' : True,
